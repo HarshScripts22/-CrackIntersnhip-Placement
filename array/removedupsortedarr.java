@@ -14,6 +14,6 @@ public class removedupsortedarr {
 
             }
         }
-        return i + 1;
+        return i + 1; // return length of removed elements from arr
     }
 }
