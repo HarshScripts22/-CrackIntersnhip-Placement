@@ -12,19 +12,15 @@ public class duplicateelements {
 
         int n = arr.length;
         for (int i = 0; i < n; i++) {
-            int index = arr[i] % n;
-            arr[i] += n;
-        }
-        for (int i = 0; i < n; i++) {
-            if (arr[i] / n >= 2) {
-                list1.add(i);
-                return list1;
+            int index = Math.abs(arr[i]) - 1;
+            if (arr[index] < 0) {
+                list1.add(Math.abs(arr[i]));
+
             }
-        }
-        if (list1.size() == 0) {
-            list1.add(-1);
+            arr[index] = -arr[index];
         }
         return list1;
+
     }
 
 }
