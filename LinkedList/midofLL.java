@@ -5,7 +5,7 @@ import org.w3c.dom.Node;
 public class midofLL {
     // ListNode head;
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
