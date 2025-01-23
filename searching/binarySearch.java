@@ -21,7 +21,7 @@ public class binarySearch {
             } else {
                 low = mid + 1;
             }
-
+            System.out.println(mid);
         }
         return -1;
     }
