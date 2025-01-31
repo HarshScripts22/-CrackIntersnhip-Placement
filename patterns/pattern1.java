@@ -98,7 +98,4 @@ public class pattern1 {
 
     }
 
-    // public static void half(int n) {
-
-    // }
 }
