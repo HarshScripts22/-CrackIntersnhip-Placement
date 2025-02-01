@@ -5,7 +5,7 @@ public class pattern2 {
         Scanner scn = new Scanner(System.in);
         System.out.println("enter val of n here");
         // int n = scn.nextInt();
-        int n = 5;
+        int n = 10;
         scn.close();
 
         // ques 1-
@@ -63,19 +63,54 @@ public class pattern2 {
         // ques 3-
         // downside triangle shaped -
 
-        int spaces = 0;
-        for (int row = n; row > 0; row--) {
-            for (int i = 1; i <= spaces; i++) {
-                System.out.print(" ");
+        // int spaces = 0;
+        // for (int row = n; row > 0; row--) {
+        // for (int i = 1; i <= spaces; i++) {
+        // System.out.print(" ");
 
-            }
-            spaces++;
-            for (int j = 1; j <= row * 2 - 1; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+        // }
+        // spaces++;
+        // for (int j = 1; j <= row * 2 - 1; j++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
 
-        }
+        // }
+        // ques 4-
+        // spaced triangle
+        // int spaces = n - 1;
+        // int stars = 1;
+        // for (int row = 1; row <= n; row++) {
+
+        // for (int i = 1; i <= spaces; i++) {
+        // System.out.print(" ");
+        // }
+        // spaces--;
+        // for (int j = 1; j <= stars; j++) {
+        // System.out.print("*" + " ");
+        // }
+        // stars++;
+
+        // System.out.println();
+        // }
+
+        // ques 5-
+        // down face triangle
+        // int spaces = 0;
+        // int stars = n;
+        // for (int row = 1; row <= n; row++) {
+        // for (int i = 1; i <= spaces; i++) {
+        // System.out.print(" ");
+        // }
+        // spaces++;
+        // for (int j = 1; j <= stars; j++) {
+        // System.out.print("*" + " ");
+
+        // }
+        // stars--;
+
+        // System.out.println();
+        // }
 
     }
 }
