@@ -62,27 +62,80 @@ public class pattern3 {
         // ques 2-
         // hollow triangle
 
+        // int spaces = n - 1;
+        // int sp = 1;
+        // for (int row = 1; row <= n - 1; row++) {
+        // for (int i = 1; i <= spaces; i++) {
+        // System.out.print(" ");
+        // }
+        // spaces--;
+        // System.out.print("*");
+
+        // if (row > 1) {
+        // for (int j = 1; j <= sp; j++) {
+        // System.out.print(" ");
+        // }
+        // sp = sp + 2;
+        // System.out.print("*");
+
+        // }
+        // System.out.println();
+        // }
+        // for (int i = 1; i < 2 * n; i++) {
+        // System.out.print("*");
+        // }
+
+        // ques 3-
+        // diamond shape
+
+        // *
+        // * *
+        // * *
+        // * *
+        // * *
+        // * *
+        // * *
+        // * *
+        // *
         int spaces = n - 1;
-        int sp = 1;
-        for (int row = 1; row <= n - 1; row++) {
+        int innersp = 1;
+        for (int row = 1; row <= n; row++) {
             for (int i = 1; i <= spaces; i++) {
                 System.out.print(" ");
             }
             spaces--;
             System.out.print("*");
-
             if (row > 1) {
-                for (int j = 1; j <= sp; j++) {
+                for (int j = 1; j <= innersp; j++) {
                     System.out.print(" ");
                 }
-                sp = sp + 2;
+                innersp = innersp + 2;
                 System.out.print("*");
 
             }
             System.out.println();
+
         }
-        for (int i = 1; i < 2 * n; i++) {
+        int spaces2 = 1;
+        int sp2 = (innersp - 2) - 2;
+
+        for (int row = n - 1; row >= 1; row--) {
+            for (int i = 1; i <= spaces2; i++) {
+                System.out.print(" ");
+            }
+            spaces2++;
             System.out.print("*");
+            if (row > 1) {
+                for (int j = 1; j <= sp2; j++) {
+                    System.out.print(" ");
+                }
+                sp2 = sp2 - 2;
+                System.out.print("*");
+            }
+
+            System.out.println();
+
         }
+
     }
 }
