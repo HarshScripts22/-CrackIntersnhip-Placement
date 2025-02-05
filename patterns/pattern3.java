@@ -97,44 +97,65 @@ public class pattern3 {
         // * *
         // * *
         // *
+        // int spaces = n - 1;
+        // int innersp = 1;
+        // for (int row = 1; row <= n; row++) {
+        // for (int i = 1; i <= spaces; i++) {
+        // System.out.print(" ");
+        // }
+        // spaces--;
+        // System.out.print("*");
+        // if (row > 1) {
+        // for (int j = 1; j <= innersp; j++) {
+        // System.out.print(" ");
+        // }
+        // innersp = innersp + 2;
+        // System.out.print("*");
+
+        // }
+        // System.out.println();
+
+        // }
+        // int spaces2 = 1;
+        // int sp2 = (innersp - 2) - 2;
+
+        // for (int row = n - 1; row >= 1; row--) {
+        // for (int i = 1; i <= spaces2; i++) {
+        // System.out.print(" ");
+        // }
+        // spaces2++;
+        // System.out.print("*");
+        // if (row > 1) {
+        // for (int j = 1; j <= sp2; j++) {
+        // System.out.print(" ");
+        // }
+        // sp2 = sp2 - 2;
+        // System.out.print("*");
+        // }
+
+        // System.out.println();
+
+        // }
+
+        // ques 4-
+        // pascal`s triangle
+
         int spaces = n - 1;
-        int innersp = 1;
+
         for (int row = 1; row <= n; row++) {
+
             for (int i = 1; i <= spaces; i++) {
                 System.out.print(" ");
             }
             spaces--;
-            System.out.print("*");
-            if (row > 1) {
-                for (int j = 1; j <= innersp; j++) {
-                    System.out.print(" ");
-                }
-                innersp = innersp + 2;
-                System.out.print("*");
 
-            }
-            System.out.println();
-
-        }
-        int spaces2 = 1;
-        int sp2 = (innersp - 2) - 2;
-
-        for (int row = n - 1; row >= 1; row--) {
-            for (int i = 1; i <= spaces2; i++) {
-                System.out.print(" ");
-            }
-            spaces2++;
-            System.out.print("*");
-            if (row > 1) {
-                for (int j = 1; j <= sp2; j++) {
-                    System.out.print(" ");
-                }
-                sp2 = sp2 - 2;
-                System.out.print("*");
+            int val = 1;
+            for (int col = 1; col <= row; col++) {
+                System.out.print(val + " ");
+                val = val * (row - col) / (col);
             }
 
             System.out.println();
-
         }
 
     }
